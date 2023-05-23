@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carrito de Compras</title>
+</head>
+<body>
+  <h1>Carrito de Compras</h1>
+
+  <div>
+    <label for="nombre">Nombre del producto:</label>
+    <input type="text" id="nombre">
+  </div>
+  <div>
+    <label for="precio">Precio:</label>
+    <input type="number" id="precio">
+  </div>
+  <div>
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad">
+  </div>
+  <button onclick="agregarAlCarrito()">Agregar al carrito</button>
+
+  <h2>Detalles del Carrito</h2>
+  <ul id="carrito"></ul>
+  <p id="total"></p>
+
+  <script>
+    var carrito = [];
+    var total = 0;
+
+    function agregarAlCarrito() {
+      var nombre = document.getElementById("nombre").value;
+      var precio = document.getElementById("precio").value;
+      var cantidad = document.getElementById("cantidad").value;
+
+      var item = {
+        nombre: nombre,
+        precio: parseFloat(precio),
+        cantidad: parseInt(cantidad)
+      };
+
+      carrito.push(item);
+      total += item.precio * item.cantidad;
+
+      mostrarCarrito();
+      mostrarTotal();
+      limpiarCampos();
+    }
+
+    function mostrarCarrito() {
+      var carritoElement = document.getElementById("carrito");
+      carritoElement.innerHTML = "";
+
+      carrito.forEach(function(item) {
+        var listItem = document.createElement("li");
+        listItem.innerText = item.nombre + " - Precio: $" + item.precio.toFixed(2) + " - Cantidad: " + item.cantidad;
+        carritoElement.appendChild(listItem);
+      });
+    }
+
+    function mostrarTotal() {
+      var totalElement = document.getElementById("total");
+      totalElement.innerText = "Total: $" + total.toFixed(2);
+    }
+
+    function limpiarCampos() {
+      document.getElementById("nombre").value = "";
+      document.getElementById("precio").value = "";
+      document.getElementById("cantidad").value = "";
+    }
+  </script>
+</body>
+</html>
