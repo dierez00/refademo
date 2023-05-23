@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+#encabezado{
+    width: 100%;
+}
+  
+.head{
+    display: inline;
+}
+
+.titulo{
+    display: inline-block;
+}
+
+/*h1{
+    display: inline-block;
+    background-image: linear-gradient(to top, #6cb979, #1aa558);
+    font-size: 100px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Bebas Neue', sans-serif;
+    font-style: italic;
+    padding-right: 15px;
+}*/
+
+#logo{
+    display: inline;
+    width: 20%;
+    float: right;
+    margin-top: 30px;
+}
+
+.productos{
+    margin: 100px;
+    text-align: center;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 2% 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: rgb(0, 0, 0);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    height: auto;
+    background: #FFFFFF;
+}
+
+.producto{
+    width: 90%;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.producto:hover{
+    transform: scale(1.1);
+}
+
+.productos h2{
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.vermas{
+   /* float: right;*/
+   text-align: center;
+    background-color: #39b54a;
+    display: inline-block;
+    box-sizing: border-box;
+    border-color: #39b54a;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-right: 10px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.vermas:hover{
+    transform: scale(1.1);
+}
+
+a{
+    text-decoration: none;
+}
+
+h3{
+    color: #FFFFFF;
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-weight: bold;
+}
+
+.historia{
+    background-color: black;
+    padding: 50px 0px 50px 0px;
+}
+
+.historia h1{
+    font-size: 50px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+}
+
+.historia p{
+    color: #39b54a;
+    text-align: center;
+    font-size: 30px;
+    margin: 50px 50px 0px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.historia h2{
+    font-size: 40px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.mapas{
+    padding: 50px 0px 50px 0px;
+    background: url(cool-background.svg);
+    background-size: cover;
+}
+
+.mapas h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.suc{
+    text-align: center;
+}
+
+.mapas h2{
+    font-size: 30px;
+    padding: 50px 0px 20px 0px;
+}
+
+.mapas p{
+    font-size: 20px;
+    padding: 0px 0px 10px 0px;
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+}
+
+.contacto{
+    text-align: center;
+    padding: 50px;
+}
+
+.contacto h1{
+    color: #39b54a;
+    padding: 10px;
+}
+
+.contacto img{
+    padding: 0px 10px 0px 10px;
+    cursor: pointer;
+}
+
+.contacto h2{
+    color: #FFFFFF;
+    padding-top: 20px;
+}
+
+#arriba{
+    width: 5%;
+    position: fixed;
+    bottom: 70px;
+    right: -100px;
+}
